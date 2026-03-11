@@ -72,7 +72,7 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="btn-contact"><a href="#contact"><i class="bi bi-whatsapp"></i> Contato</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -85,12 +85,12 @@
     <!-- Hero Section -->
     <section id="herocar" class="herocar section dark-background">
 
-      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false" >
 
         <div class="carousel-item active">
           <img src="assets/img/hero_1.jpg" alt="">
           <div class="carousel-container">
-            <h2>Farming is the best solution of worlds starvation</h2>
+            <h2>Farming is the best solution of worlds</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
         </div><!-- End Carousel Item -->
@@ -444,292 +444,302 @@
 
     </section><!-- /Why Us Section -->
 
+
+
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span class="subtitle">Portfolio</span>
-        <h2>Check Our Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+        <span class="subtitle">Team</span>
+        <h2>Portfolio</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-            <li data-filter="*" class="filter-active">All Work</li>
-            <li data-filter=".filter-design">Digital Design</li>
-            <li data-filter=".filter-development">Development</li>
-            <li data-filter=".filter-strategy">Strategy</li>
-            <li data-filter=".filter-consulting">Consulting</li>
-          </ul><!-- End Portfolio Filters -->
+        <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
 
-          <div class="row gy-5 isotope-container" data-aos="fade-up" data-aos-delay="300">
+          <div class="filters-wrapper" data-aos="fade-up" data-aos-delay="100">
+            <ul class="portfolio-filters isotope-filters">
+              <li data-filter="*" class="filter-active">All Projects</li>
+              <li data-filter=".filter-web">Web Design</li>
+              <li data-filter=".filter-mobile">Mobile Apps</li>
+              <li data-filter=".filter-branding">Branding</li>
+              <li data-filter=".filter-ui">UI/UX</li>
+            </ul>
+          </div>
 
-            <div class="col-lg-12 portfolio-item isotope-item filter-design">
-              <article class="portfolio-card">
-                <div class="row g-4">
-                  <div class="col-md-6">
-                    <div class="project-visual">
-                      <img src="assets/img/portfolio/portfolio-1.webp" alt="Enterprise Digital Platform" class="img-fluid" loading="lazy">
-                      <div class="project-overlay">
-                        <div class="overlay-content">
-                          <a href="assets/img/portfolio/portfolio-1.webp" class="view-project glightbox" aria-label="View project image">
-                            <i class="bi bi-eye"></i>
-                          </a>
-                          <a href="#" class="project-link" aria-label="View project details">
-                            <i class="bi bi-arrow-up-right"></i>
-                          </a>
-                        </div>
-                      </div>
+          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="project-card">
+                <div class="image-wrapper">
+                  <img src="assets/img/portfolio/portfolio-2.webp" alt="Project showcase" class="img-fluid" loading="lazy">
+                  <div class="hover-overlay">
+                    <div class="overlay-actions">
+                      <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox action-btn" data-gallery="portfolio">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn">
+                        <i class="bi bi-link-45deg"></i>
+                      </a>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="project-details">
-                      <div class="project-header">
-                        <span class="project-category">Digital Design</span>
-                        <time class="project-year">2024</time>
-                      </div>
-                      <h3 class="project-title">Enterprise Digital Platform</h3>
-                      <p class="project-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam.</p>
-                      <div class="project-meta">
-                        <span class="client-name">Fortune 500 Company</span>
-                        <div class="project-scope">
-                          <span class="scope-item">UX Design</span>
-                          <span class="scope-item">Development</span>
-                          <span class="scope-item">Strategy</span>
-                        </div>
-                      </div>
+                  <span class="category-badge">Web Design</span>
+                </div>
+                <div class="project-info">
+                  <h3>Corporate Dashboard System</h3>
+                  <p>Pellentesque habitant morbi tristique senectus et netus.</p>
+                  <div class="project-meta">
+                    <div class="tech-tags">
+                      <span>Angular</span>
+                      <span>Python</span>
                     </div>
+                    <span class="year">2024</span>
                   </div>
                 </div>
-              </article>
-            </div>
+              </div>
+            </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-12 portfolio-item isotope-item filter-development">
-              <article class="portfolio-card">
-                <div class="row g-4">
-                  <div class="col-md-6 order-md-2">
-                    <div class="project-visual">
-                      <img src="assets/img/portfolio/portfolio-3.webp" alt="SaaS Product Suite" class="img-fluid" loading="lazy">
-                      <div class="project-overlay">
-                        <div class="overlay-content">
-                          <a href="assets/img/portfolio/portfolio-3.webp" class="view-project glightbox" aria-label="View project image">
-                            <i class="bi bi-eye"></i>
-                          </a>
-                          <a href="#" class="project-link" aria-label="View project details">
-                            <i class="bi bi-arrow-up-right"></i>
-                          </a>
-                        </div>
-                      </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
+              <div class="project-card featured">
+                <div class="image-wrapper">
+                  <img src="assets/img/portfolio/portfolio-4.webp" alt="Project showcase" class="img-fluid" loading="lazy">
+                  <div class="hover-overlay">
+                    <div class="overlay-actions">
+                      <a href="assets/img/portfolio/portfolio-4.webp" class="glightbox action-btn" data-gallery="portfolio">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn">
+                        <i class="bi bi-link-45deg"></i>
+                      </a>
                     </div>
                   </div>
-                  <div class="col-md-6 order-md-1">
-                    <div class="project-details">
-                      <div class="project-header">
-                        <span class="project-category">Development</span>
-                        <time class="project-year">2024</time>
-                      </div>
-                      <h3 class="project-title">SaaS Product Suite</h3>
-                      <p class="project-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
-                      <div class="project-meta">
-                        <span class="client-name">Tech Startup</span>
-                        <div class="project-scope">
-                          <span class="scope-item">Full Stack</span>
-                          <span class="scope-item">Cloud Architecture</span>
-                          <span class="scope-item">DevOps</span>
-                        </div>
-                      </div>
+                  <span class="category-badge">Mobile Apps</span>
+                  <span class="featured-badge"><i class="bi bi-star-fill"></i> Featured</span>
+                </div>
+                <div class="project-info">
+                  <h3>Smart Finance Application</h3>
+                  <p>Maecenas tempus tellus eget condimentum rhoncus.</p>
+                  <div class="project-meta">
+                    <div class="tech-tags">
+                      <span>Swift</span>
+                      <span>Kotlin</span>
                     </div>
+                    <span class="year">2024</span>
                   </div>
                 </div>
-              </article>
-            </div>
+              </div>
+            </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-12 portfolio-item isotope-item filter-strategy">
-              <article class="portfolio-card">
-                <div class="row g-4">
-                  <div class="col-md-6">
-                    <div class="project-visual">
-                      <img src="assets/img/portfolio/portfolio-5.webp" alt="Brand Transformation" class="img-fluid" loading="lazy">
-                      <div class="project-overlay">
-                        <div class="overlay-content">
-                          <a href="assets/img/portfolio/portfolio-5.webp" class="view-project glightbox" aria-label="View project image">
-                            <i class="bi bi-eye"></i>
-                          </a>
-                          <a href="#" class="project-link" aria-label="View project details">
-                            <i class="bi bi-arrow-up-right"></i>
-                          </a>
-                        </div>
-                      </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="project-card">
+                <div class="image-wrapper">
+                  <img src="assets/img/portfolio/portfolio-6.webp" alt="Project showcase" class="img-fluid" loading="lazy">
+                  <div class="hover-overlay">
+                    <div class="overlay-actions">
+                      <a href="assets/img/portfolio/portfolio-6.webp" class="glightbox action-btn" data-gallery="portfolio">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn">
+                        <i class="bi bi-link-45deg"></i>
+                      </a>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="project-details">
-                      <div class="project-header">
-                        <span class="project-category">Strategy</span>
-                        <time class="project-year">2023</time>
-                      </div>
-                      <h3 class="project-title">Brand Transformation</h3>
-                      <p class="project-description">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <div class="project-meta">
-                        <span class="client-name">Global Corporation</span>
-                        <div class="project-scope">
-                          <span class="scope-item">Brand Strategy</span>
-                          <span class="scope-item">Visual Identity</span>
-                          <span class="scope-item">Guidelines</span>
-                        </div>
-                      </div>
+                  <span class="category-badge">Branding</span>
+                </div>
+                <div class="project-info">
+                  <h3>Fashion Label Identity</h3>
+                  <p>Donec quam felis ultricies nec pellentesque pretium.</p>
+                  <div class="project-meta">
+                    <div class="tech-tags">
+                      <span>Photoshop</span>
+                      <span>Illustrator</span>
                     </div>
+                    <span class="year">2023</span>
                   </div>
                 </div>
-              </article>
-            </div>
+              </div>
+            </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-12 portfolio-item isotope-item filter-consulting">
-              <article class="portfolio-card">
-                <div class="row g-4">
-                  <div class="col-md-6 order-md-2">
-                    <div class="project-visual">
-                      <img src="assets/img/portfolio/portfolio-6.webp" alt="Digital Transformation" class="img-fluid" loading="lazy">
-                      <div class="project-overlay">
-                        <div class="overlay-content">
-                          <a href="assets/img/portfolio/portfolio-6.webp" class="view-project glightbox" aria-label="View project image">
-                            <i class="bi bi-eye"></i>
-                          </a>
-                          <a href="#" class="project-link" aria-label="View project details">
-                            <i class="bi bi-arrow-up-right"></i>
-                          </a>
-                        </div>
-                      </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <div class="project-card">
+                <div class="image-wrapper">
+                  <img src="assets/img/portfolio/portfolio-8.webp" alt="Project showcase" class="img-fluid" loading="lazy">
+                  <div class="hover-overlay">
+                    <div class="overlay-actions">
+                      <a href="assets/img/portfolio/portfolio-8.webp" class="glightbox action-btn" data-gallery="portfolio">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn">
+                        <i class="bi bi-link-45deg"></i>
+                      </a>
                     </div>
                   </div>
-                  <div class="col-md-6 order-md-1">
-                    <div class="project-details">
-                      <div class="project-header">
-                        <span class="project-category">Consulting</span>
-                        <time class="project-year">2024</time>
-                      </div>
-                      <h3 class="project-title">Digital Transformation</h3>
-                      <p class="project-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                      <div class="project-meta">
-                        <span class="client-name">Healthcare Provider</span>
-                        <div class="project-scope">
-                          <span class="scope-item">Process Optimization</span>
-                          <span class="scope-item">Technology Audit</span>
-                          <span class="scope-item">Implementation</span>
-                        </div>
-                      </div>
+                  <span class="category-badge">UI/UX</span>
+                </div>
+                <div class="project-info">
+                  <h3>E-Learning Platform Design</h3>
+                  <p>Aenean leo ligula porttitor eu consequat vitae.</p>
+                  <div class="project-meta">
+                    <div class="tech-tags">
+                      <span>Figma</span>
+                      <span>Principle</span>
                     </div>
+                    <span class="year">2024</span>
                   </div>
                 </div>
-              </article>
-            </div>
+              </div>
+            </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-12 portfolio-item isotope-item filter-design">
-              <article class="portfolio-card">
-                <div class="row g-4">
-                  <div class="col-md-6">
-                    <div class="project-visual">
-                      <img src="assets/img/portfolio/portfolio-2.webp" alt="E-commerce Experience" class="img-fluid" loading="lazy">
-                      <div class="project-overlay">
-                        <div class="overlay-content">
-                          <a href="assets/img/portfolio/portfolio-2.webp" class="view-project glightbox" aria-label="View project image">
-                            <i class="bi bi-eye"></i>
-                          </a>
-                          <a href="#" class="project-link" aria-label="View project details">
-                            <i class="bi bi-arrow-up-right"></i>
-                          </a>
-                        </div>
-                      </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="project-card">
+                <div class="image-wrapper">
+                  <img src="assets/img/portfolio/portfolio-1.webp" alt="Project showcase" class="img-fluid" loading="lazy">
+                  <div class="hover-overlay">
+                    <div class="overlay-actions">
+                      <a href="assets/img/portfolio/portfolio-1.webp" class="glightbox action-btn" data-gallery="portfolio">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn">
+                        <i class="bi bi-link-45deg"></i>
+                      </a>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="project-details">
-                      <div class="project-header">
-                        <span class="project-category">Digital Design</span>
-                        <time class="project-year">2024</time>
-                      </div>
-                      <h3 class="project-title">E-commerce Experience</h3>
-                      <p class="project-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint.</p>
-                      <div class="project-meta">
-                        <span class="client-name">Retail Brand</span>
-                        <div class="project-scope">
-                          <span class="scope-item">User Experience</span>
-                          <span class="scope-item">Interface Design</span>
-                          <span class="scope-item">Conversion Optimization</span>
-                        </div>
-                      </div>
+                  <span class="category-badge">Web Design</span>
+                </div>
+                <div class="project-info">
+                  <h3>Social Media Platform</h3>
+                  <p>Vivamus elementum semper nisi quisque rutrum.</p>
+                  <div class="project-meta">
+                    <div class="tech-tags">
+                      <span>React</span>
+                      <span>MongoDB</span>
                     </div>
+                    <span class="year">2023</span>
                   </div>
                 </div>
-              </article>
-            </div>
+              </div>
+            </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-12 portfolio-item isotope-item filter-development">
-              <article class="portfolio-card">
-                <div class="row g-4">
-                  <div class="col-md-6 order-md-2">
-                    <div class="project-visual">
-                      <img src="assets/img/portfolio/portfolio-4.webp" alt="Mobile Application" class="img-fluid" loading="lazy">
-                      <div class="project-overlay">
-                        <div class="overlay-content">
-                          <a href="assets/img/portfolio/portfolio-4.webp" class="view-project glightbox" aria-label="View project image">
-                            <i class="bi bi-eye"></i>
-                          </a>
-                          <a href="#" class="project-link" aria-label="View project details">
-                            <i class="bi bi-arrow-up-right"></i>
-                          </a>
-                        </div>
-                      </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
+              <div class="project-card">
+                <div class="image-wrapper">
+                  <img src="assets/img/portfolio/portfolio-3.webp" alt="Project showcase" class="img-fluid" loading="lazy">
+                  <div class="hover-overlay">
+                    <div class="overlay-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox action-btn" data-gallery="portfolio">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn">
+                        <i class="bi bi-link-45deg"></i>
+                      </a>
                     </div>
                   </div>
-                  <div class="col-md-6 order-md-1">
-                    <div class="project-details">
-                      <div class="project-header">
-                        <span class="project-category">Development</span>
-                        <time class="project-year">2023</time>
-                      </div>
-                      <h3 class="project-title">Mobile Application</h3>
-                      <p class="project-description">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.</p>
-                      <div class="project-meta">
-                        <span class="client-name">Financial Services</span>
-                        <div class="project-scope">
-                          <span class="scope-item">iOS Development</span>
-                          <span class="scope-item">Android Development</span>
-                          <span class="scope-item">API Integration</span>
-                        </div>
-                      </div>
+                  <span class="category-badge">Mobile Apps</span>
+                </div>
+                <div class="project-info">
+                  <h3>Health Monitoring App</h3>
+                  <p>Nullam quis ante etiam sit amet orci eget.</p>
+                  <div class="project-meta">
+                    <div class="tech-tags">
+                      <span>Flutter</span>
+                      <span>AWS</span>
                     </div>
+                    <span class="year">2024</span>
                   </div>
                 </div>
-              </article>
-            </div>
+              </div>
+            </div><!-- End Portfolio Item -->
 
-          </div><!-- End Portfolio Items Container -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <div class="project-card featured">
+                <div class="image-wrapper">
+                  <img src="assets/img/portfolio/portfolio-7.webp" alt="Project showcase" class="img-fluid" loading="lazy">
+                  <div class="hover-overlay">
+                    <div class="overlay-actions">
+                      <a href="assets/img/portfolio/portfolio-7.webp" class="glightbox action-btn" data-gallery="portfolio">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn">
+                        <i class="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <span class="category-badge">UI/UX</span>
+                  <span class="featured-badge"><i class="bi bi-star-fill"></i> Featured</span>
+                </div>
+                <div class="project-info">
+                  <h3>Banking Dashboard Redesign</h3>
+                  <p>Curabitur ullamcorper ultricies nisi nam eget dui.</p>
+                  <div class="project-meta">
+                    <div class="tech-tags">
+                      <span>Sketch</span>
+                      <span>Zeplin</span>
+                    </div>
+                    <span class="year">2024</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="project-card">
+                <div class="image-wrapper">
+                  <img src="assets/img/portfolio/portfolio-9.webp" alt="Project showcase" class="img-fluid" loading="lazy">
+                  <div class="hover-overlay">
+                    <div class="overlay-actions">
+                      <a href="assets/img/portfolio/portfolio-9.webp" class="glightbox action-btn" data-gallery="portfolio">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn">
+                        <i class="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <span class="category-badge">Branding</span>
+                </div>
+                <div class="project-info">
+                  <h3>Tech Company Rebranding</h3>
+                  <p>Etiam rhoncus maecenas tempus tellus condimentum.</p>
+                  <div class="project-meta">
+                    <div class="tech-tags">
+                      <span>InDesign</span>
+                      <span>Motion</span>
+                    </div>
+                    <span class="year">2023</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
 
         </div>
 
-        <div class="portfolio-conclusion" data-aos="fade-up" data-aos-delay="400">
-          <div class="conclusion-content">
-            <h4>Ready to elevate your business?</h4>
-            <p>Let's discuss how we can transform your digital presence and drive meaningful results for your organization.</p>
-            <div class="conclusion-actions">
-              <a href="#contact" class="primary-action">
-                Start Conversation
-                <i class="bi bi-arrow-right"></i>
-              </a>
-              <a href="#portfolio" class="secondary-action">
-                View All Projects
-              </a>
+        <div class="cta-section" data-aos="zoom-in" data-aos-delay="300">
+          <div class="cta-content">
+            <span class="cta-label"><i class="bi bi-lightning-charge-fill"></i> Ready to Start?</span>
+            <h3>Let's Create Something Amazing Together</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam.</p>
+            <div class="cta-buttons">
+              <a href="#contact" class="btn-cta-primary">Launch Your Project <i class="bi bi-arrow-right"></i></a>
+              <a href="#services" class="btn-cta-secondary"><i class="bi bi-play-circle"></i> Explore Services</a>
             </div>
+          </div>
+          <div class="cta-decoration">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
           </div>
         </div>
 
       </div>
 
     </section><!-- /Portfolio Section -->
+
+
 
     <!-- Team Section -->
     <section id="team" class="team section">
